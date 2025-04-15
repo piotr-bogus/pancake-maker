@@ -1,0 +1,166 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #eee;
+  --gray-hover: #ddd;
+  --placeholder: #888;
+  --focus: #2fa6ff;
+  --border: #ccc;
+  --link: #1a73e8;
+  --brown: #412210;
+  --brown-hover: #311a0c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Host Grotesk", sans-serif;
+}
+
+.navbar {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.navbar-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 64px;
+  max-width: 1024px;
+}
+
+.navbar-a {
+  margin-inline: 16px;
+  font-size: 16px;
+}
+
+.navbar-a:first-child {
+  margin-right: auto;
+}
+
+.navbar-a:last-child {
+  display: none;
+}
+
+.navbar-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+
+.navbar-btn {
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.navbar-phone {
+  display: none;
+  margin-bottom: 64px;
+}
+
+.navbar-ul-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--black);
+  width: 100%;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 16px 16px var(--gray-hover);
+}
+
+.navbar-a-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.navbar-a-phone:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  margin: 64px;
+}
+
+.container-footbar {
+  background-color: var(--brown);
+  color: var(--white);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 32px;
+}
+
+.title-footbar {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description-footbar {
+  font-size: 16px;
+}
+
+.description-footbar a:hover {
+  text-decoration: underline;
+}
+
+.container-copyright {
+  background-color: var(--brown-hover);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Montserrat", sans-serif;
+  padding: 16px;
+  font-size: 13px;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-a:nth-child(2),
+  .navbar-a:nth-child(3),
+  .navbar-a:nth-child(4),
+  .navbar-a:nth-child(5),
+  .navbar-a:nth-child(6) {
+    display: none;
+  }
+
+  .navbar-a:last-child {
+    display: flex;
+  }
+
+  .container {
+    margin: 32px;
+  }
+
+  .container-footbar {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .container-copyright {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

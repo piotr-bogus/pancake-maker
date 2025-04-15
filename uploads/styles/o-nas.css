@@ -1,0 +1,39 @@
+.container-main-about {
+  display: flex;
+}
+
+.container-about {
+  margin: auto;
+  border: 2px solid var(--black);
+  width: 768px;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 16px 16px var(--gray-hover);
+}
+
+.container-about-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding-inline: 16px;
+  font-size: 24px;
+}
+
+.about {
+  padding: 16px;
+}
+
+.about:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+.title-about {
+  font-weight: bold;
+  padding-bottom: 4px;
+  font-size: 18px;
+}
+
+.description-about {
+  font-size: 16px;
+}
