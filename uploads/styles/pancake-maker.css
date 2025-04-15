@@ -1,3 +1,43 @@
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 2px solid var(--black);
+  max-width: 768px;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 32px;
+  box-shadow: 16px 16px var(--gray-hover);
+}
+
+.title-information {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.description-information {
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn-information {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-family: "Host Grotesk", sans-serif;
+  border: 1px solid var(--black);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 16px;
+}
+
+.btn-information:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .container-home {
   display: flex;
   align-items: center;
@@ -118,4 +158,10 @@
 
 .description-menu {
   font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .btn-information {
+    width: 100%;
+  }
 }

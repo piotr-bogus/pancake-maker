@@ -12,10 +12,10 @@
   <body>
     <nav class="navbar">
       <ul class="navbar-ul">
-        <a href="pancake-maker.html" class="navbar-a">
+        <a href="index.html" class="navbar-a">
           <img src="uploads/logos/logo.png" alt="" class="navbar-img" />
         </a>
-        <a href="pancake-maker.html" class="navbar-a">Strona główna</a>
+        <a href="index.html" class="navbar-a">Strona główna</a>
         <a href="menu.html" class="navbar-a">Menu</a>
         <a href="praca.html" class="navbar-a">Praca</a>
         <a href="kontakt.html" class="navbar-a">Kontakt</a>
@@ -28,18 +28,25 @@
     <main class="container">
       <nav class="navbar-phone">
         <ul class="navbar-ul-phone">
-          <a href="pancake-maker.html" class="navbar-a-phone">Strona główna</a>
+          <a href="index.html" class="navbar-a-phone">Strona główna</a>
           <a href="menu.html" class="navbar-a-phone">Menu</a>
           <a href="praca.html" class="navbar-a-phone">Praca</a>
           <a href="kontakt.html" class="navbar-a-phone">Kontakt</a>
           <a href="o-nas.html" class="navbar-a-phone">O nas</a>
         </ul>
       </nav>
+
       <main class="container-home">
+        <article class="information">
+          <p class="title-information">Uwaga!</p>
+          <p class="description-information">Wszystkie dane przedstawione na tej stronie są fikcyjne i zostały użyte wyłącznie w celach demonstracyjnych. Strona została stworzona jako projekt pokazowy, mający na celu zaprezentowanie umiejętności programistycznych autora.</p>
+          <p class="description-information">Nie jest to rzeczywista oferta ani oficjalna strona firmy/organizacji.</p>
+          <input type="button" value="Zamknij" class="btn-information" onclick="hideInformation()"/>
+        </article>
         <img src="uploads/images/img_1.jpg" alt="" class="img-home" />
         <p class="description-home">W <strong>Pancake Maker</strong> naleśniki to nasza pasja. Codziennie tworzymy je ze świeżych składników – z sercem, pomysłem i smakiem. Od rana do wieczora serwujemy pyszności, które zadowolą każdego głodomora!</p>
         <section class="container-promotion">
-          <p class="container-promotion-title">Aktualne promocje</p>
+          <p class="container-promotion-title">Aktualne promocje!</p>
           <article class="promotion">
             <p class="title-promotion">Drugi naleśnik -50%</p>
             <p class="description-promotion">Przyjdź z kimś głodnym! Zamów dowolnego naleśnika, a drugi – tańszy lub w tej samej cenie – otrzymasz <strong>50% taniej</strong>.</p>
@@ -163,6 +170,7 @@
       <div class="copyright">Created by <a href="../My Projects/my-projects.html" class="author-link" target="_blank">Piotr Bogus</a></div>
     </footer>
     <script src="uploads/scripts/copyright-year.js"></script>
+    <script src="uploads/scripts/information.js"></script>
     <script src="uploads/scripts/navbar.js"></script>
   </body>
 </html>
